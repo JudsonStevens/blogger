@@ -55,8 +55,9 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
-  Shoulda::matchers.configure do |config|
+  Shoulda::Matchers.configure do |config|
     config.integrate do |with|
       with.library :rails
     end
+  end
 end
