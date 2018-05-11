@@ -15,6 +15,7 @@ describe 'user can edit an article' do
       expect(current_path).to eq(article_path(article_1))
       expect(page).to_not have_content(article_1.title)
       expect(page).to have_content('Edited title!')
+      expect(page).to have_content('Article Edited title! Updated!')
     end
   end
 end
